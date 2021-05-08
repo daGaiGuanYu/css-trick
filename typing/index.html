@@ -1,0 +1,26 @@
+<style>
+div {
+  width: 22ch; /** 1ch 相当于数字 0 的宽度 **/
+  font-family: monospace; /** 再使用等宽字体，使 1ch 相当于“一个字母”的宽度 **/
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+</style>
+
+<div>This is a typing demo.</div>
